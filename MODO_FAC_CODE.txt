@@ -1,0 +1,31 @@
+Nestes numeros representa as linhas que vai ler para executar o comando!! (linha 2 SIM) (linha 3 RECUPERAR)
+5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+26 27 28 29 30 31
+-------------------------------------------------------------- APPS TAKKILL
+WidgetService.exe
+Widgets.exe
+WhatsApp.exe
+Rainmeter.exe
+monitor.exe
+wallpaper64.exe
+CortexLauncherService.exe
+GameManagerService.exe
+GameManagerService3.exe
+LibreHardwareMonitor.exe
+Dashboard.exe
+RazerCentralService.exe
+RazerCortex.exe
+Razer Central.exe
+Razer Synapse 3.exe
+Razer Synapse Service.exe
+Razer Synapse Service Process.exe
+spoolsv.exe
+OneDrive.exe
+NVIDIA Web Helper.exe
+-------------------------------------------------------------- APPS START
+taskkill /IM "WidgetService.exe" /F
+taskkill /IM "Widgets.exe" /F
+start /B /MIN "" /D "C:\Windows\System32" "spoolsv.exe"
+start /B /MIN "" /D "C:\Program Files (x86)\Steam\steamapps\common\wallpaper_engine" "wallpaper64.exe"
+start /B /MIN "" /D "C:\Program Files (x86)\Western Digital\SSD Dashboard" "Dashboard.exe"
+start /B /MIN "" /D "C:\Program Files\Rainmeter" "Rainmeter.exe"

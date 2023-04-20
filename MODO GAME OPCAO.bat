@@ -11,7 +11,7 @@ for /f "usebackq tokens=*" %%a in ("%ARQUIVO%") do (
     set /a contador+=1
 )
 
-echo MODO GAME = [f]-(FULL) ou [l]-(LITE) ou [t]-(Terminar) ou [r]-(RECUPERAR):
+echo MODO GAME = [f]-(FULL) ou [l]-(LITE) ou [t]-(TERMINAR) ou [r]-(RECUPERAR):
 set /p escolha=
 
 if "%escolha%"=="f" (

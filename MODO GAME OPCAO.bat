@@ -11,7 +11,7 @@ for /f "usebackq tokens=*" %%a in ("%ARQUIVO%") do (
     set /a contador+=1
 )
 
-echo MODO GAME = [f]-(SIM FULL) ou [l]-(SIM LITE) ou [n]-(NAO) ou [r]-(RECUPERAR BASICO):
+echo MODO GAME = [f]-(FULL) ou [l]-(LITE) ou [t]-(Terminar) ou [r]-(RECUPERAR):
 set /p escolha=
 
 if "%escolha%"=="f" (
@@ -43,7 +43,7 @@ if "%escolha%"=="f" (
     exit /b 0
 
 ) else if "%escolha%"=="r" (
-    echo MODO: RECUPERAR BASICO
+    echo MODO: RECUPERAR
     set "LINHAS_BUSCADAS=!VARIAVEL[4]!"
     echo Linhas buscadas: !LINHAS_BUSCADAS!
     echo.
@@ -56,7 +56,7 @@ if "%escolha%"=="f" (
     timeout /t 3 /nobreak
     exit /b 0
 
-) else if "%escolha%"=="n" (
+) else if "%escolha%"=="t" (
     echo A Terminar Programa...
     timeout /t 3 /nobreak
 	exit /b 0

@@ -1,7 +1,7 @@
 Nestes numeros representa as linhas que vai ler para executar o comando!! (linha 2 SIM) (linha 3 RECUPERAR)
 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 24
 26 27 28 29 30 31 32
--------------------------------------------------------------- APPS TAKKILL
+-------------------------------------------------------------- APPS TASKKILL (só taskkill)
 WidgetService.exe
 Widgets.exe
 WhatsApp.exe
@@ -22,7 +22,7 @@ Razer Synapse Service Process.exe
 spoolsv.exe
 OneDrive.exe
 NVIDIA Web Helper.exe
--------------------------------------------------------------- APPS START
+-------------------------------------------------------------- APPS START (ou outro comando diferente)
 taskkill /IM "WidgetService.exe" /F
 taskkill /IM "Widgets.exe" /F
 start /B /MIN "" /D "C:\Windows\System32" "spoolsv.exe"

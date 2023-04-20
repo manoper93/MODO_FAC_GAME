@@ -28,7 +28,7 @@ if "%status%"=="1" (
     exit /b 0
 
 ) else (
-    echo MODO: RECUPERAR BASICO
+    echo MODO: RECUPERAR
     set "LINHAS_BUSCADAS=!VARIAVEL[3]!"
     echo Linhas buscadas: !LINHAS_BUSCADAS!
     echo.

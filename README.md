@@ -1,3 +1,7 @@
+Hello everyone, this discord was created for project purposes, comments for improvement and new ideas will be welcome. https://discord.gg/2Dawbuq2
+
+--------------------
+
 # MODO_FAC_GAME
 
 The .txt files have to be in c:\ and are the ones that contain the commands you want to do for taskkill and start

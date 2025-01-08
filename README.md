@@ -1,12 +1,98 @@
-# MODO_FAC_GAME
-**Battery and Game Mode Automation**
+# Task Automation Batch Scripts
 
-The project provides automation scripts for managing battery and game modes in a user-friendly environment. It includes batch files and executables for controlling tasks such as **taskkill** and **start** commands, which are essential for managing game and battery modes effectively. The repository also contains text files with commands for configuring these modes, making it a practical solution for automating system management in different scenarios.
+This project consists of two batch scripts designed for task automation. The scripts enable conditional execution based on a mode (e.g., "Faculdade" or "Recuperar") and user interaction. These scripts use a configuration file to determine tasks and provide a dynamic interface for user control.
 
 ---
 
-This description provides an overview of the project's functionality, including automation of tasks related to game and battery modes.
+## 🌟 **Project Objective**
+The aim of these scripts is to:
 
+- Automate task management based on system status.
+- Dynamically process tasks from a configuration file.
+- Provide user interaction to choose between different modes.
+
+---
+
+## 📂 **Structure Overview**
+### **Key Components**
+- **Configuration File**: `MODO_FAC_CODE.txt` contains task IDs for different modes.
+- **Batch Scripts**:
+  - **Mode-Driven Automation**: Executes tasks based on system conditions (e.g., battery status).
+  - **Interactive Script**: Allows user input to select and execute tasks dynamically.
+
+---
+
+## 🔧 **Features Implemented**
+1. **Dynamic Task Management**:
+   - Executes or terminates tasks based on the specified mode.
+   - Fetches tasks dynamically from the configuration file.
+2. **User Interaction**:
+   - Allows users to choose between "Faculdade," "Recuperar," or terminating the script.
+3. **Condition-Based Execution**:
+   - Automates task execution based on system battery status.
+
+---
+
+## 📚 **Code Overview**
+
+### **Batch Script 1: Mode-Driven Automation**
+#### **Functionality**
+- Reads `MODO_FAC_CODE.txt` to fetch task IDs.
+- Checks battery status using `wmic path Win32_Battery`.
+- Executes tasks based on the following modes:
+  - **Faculdade**:
+    - Terminates processes listed in the second line of `MODO_FAC_CODE.txt`.
+  - **Recuperar**:
+    - Executes commands listed in the third line of `MODO_FAC_CODE.txt`.
+
+---
+
+## 📚 **Configuration File Structure**
+- **Path**: `C:\MODO_FAC_CODE.txt`
+- **Content Format**:
+  - First Line: Placeholder or unused.
+  - Second Line: Task IDs for "Faculdade" mode.
+  - Third Line: Task IDs or commands for "Recuperar" mode.
+
+Example:
+```
+# Configuration File
+1 2 3
+notepad.exe calc.exe
+```
+
+---
+
+## 📚 **How to Use the Project**
+1. **Prepare the Configuration File**:
+   - Create `C:\MODO_FAC_CODE.txt` with task IDs or commands.
+
+2. **Run the Script**:
+   - For automated execution:
+     ```
+     batch_script_1.bat
+     ```
+   - For interactive mode:
+     ```
+     batch_script_2.bat
+     ```
+
+3. **Modes**:
+   - "Faculdade": Terminates tasks defined in the configuration file.
+   - "Recuperar": Executes commands defined in the configuration file.
+
+---
+
+## 🎯 **Next Steps**
+- Add advanced error handling for missing files or invalid configurations.
+- Enable logging for task execution.
+- Expand configuration file capabilities for more complex scenarios.
+
+---
+
+Thank you for exploring this project! 💡
+
+---
 
 ## Screenshot's
 

@@ -1,4 +1,4 @@
-# Task Automation Batch Scripts
+# 🔥 Task Automation Batch Scripts
 
 This project consists of two batch scripts designed for task automation. The scripts enable conditional execution based on a mode (e.g., "Faculdade" or "Recuperar") and user interaction. These scripts use a configuration file to determine tasks and provide a dynamic interface for user control.
 
